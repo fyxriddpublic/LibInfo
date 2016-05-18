@@ -1,9 +1,9 @@
 package com.fyxridd.lib.info;
 
+import com.fyxridd.lib.core.api.SqlApi;
 import com.fyxridd.lib.core.api.plugin.SimplePlugin;
 import com.fyxridd.lib.info.manager.DaoManager;
 import com.fyxridd.lib.info.manager.InfoManager;
-import com.fyxridd.lib.sql.api.SqlApi;
 
 import java.io.File;
 

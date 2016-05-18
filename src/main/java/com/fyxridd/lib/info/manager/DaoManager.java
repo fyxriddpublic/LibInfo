@@ -1,8 +1,8 @@
 package com.fyxridd.lib.info.manager;
 
+import com.fyxridd.lib.core.api.SqlApi;
 import com.fyxridd.lib.info.mapper.InfoUserMapper;
 import com.fyxridd.lib.info.model.InfoUser;
-import com.fyxridd.lib.sql.api.SqlApi;
 import org.apache.ibatis.session.SqlSession;
 
 import java.util.Collection;

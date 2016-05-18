@@ -1,4 +1,4 @@
 ﻿name: LibInfo
 main: com.fyxridd.lib.info.InfoPlugin
 version: 0.1.0
-depend: [LibCore, LibSql]
+depend: [LibCore]
