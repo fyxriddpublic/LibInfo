@@ -14,9 +14,9 @@ public interface InfoUserMapper {
      */
     InfoUser select(@Param("name") String name, @Param("flag") String flag);
 
-    void insert(@Param("user") InfoUser user);
+    void insert(InfoUser user);
 
-    void update(@Param("user") InfoUser user);
+    void update(InfoUser user);
 
-    void delete(@Param("user") InfoUser user);
+    void delete(InfoUser user);
 }
