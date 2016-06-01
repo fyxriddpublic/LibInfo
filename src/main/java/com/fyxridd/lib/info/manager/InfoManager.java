@@ -32,7 +32,10 @@ public class InfoManager {
         Bukkit.getPluginManager().registerEvent(PluginDisableEvent.class, InfoPlugin.instance, EventPriority.HIGHEST, new EventExecutor() {
             @Override
             public void execute(Listener listener, Event e) throws EventException {
-                saveAll();
+                if (e instanceof PluginDisableEvent) {
+                    PluginDisableEvent event = (PluginDisableEvent) e;
+                    if (event.getPlugin().getName().equals(InfoPlugin.instance.pn)) saveAll();
+                }
             }
         }, InfoPlugin.instance);
         //定时更新
